@@ -34,7 +34,7 @@ No. objects	  Category
 
 ---
 ### Software
-YOLO v3: https://github.com/ultralytics/yolov3 <br/>
+YOLO v3: https://github.com/ultralytics/yolov3 
 Python 3: https://www.python.org/
 ---
 ### Training YOLO v3
