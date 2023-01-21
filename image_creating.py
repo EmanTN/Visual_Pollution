@@ -50,19 +50,20 @@ for line in Lines:
         count += 1
         continue
     classNo = line.split(',')[0]
-    file_id_path = line.split(',')[1]
-    print(file_id_path)
-    # open image in cv2
-    img = cv2.imread(image_path + file_id_path)
-    h, w, c = img.shape
-    cat = line.split(',')[2]
-    xmax = float(line.split(',')[3])
-    xmin = float(line.split(',')[4])
-    ymax = float(line.split(',')[5])
-    ymin = float(line.split(',')[6]) 
-    # plot the box
-    plot_one_box([xmin, ymin, xmax, ymax], img, color=(0, 255, 0), label=cat, line_thickness=2)
-    # save the image
-    cv2.imwrite(output_path +  str(count) + "_" + str(int(float(classNo))) + "_" + file_id_path, img)
-    print("Line {}: {}".format(count, line.strip()))
+    if classNo != '':
+        file_id_path = line.split(',')[1]
+#        print(file_id_path)
+        # open image in cv2
+        img = cv2.imread(image_path + file_id_path)
+        h, w, c = img.shape
+        cat = line.split(',')[2]
+        xmax = float(line.split(',')[3])
+        xmin = float(line.split(',')[4])
+        ymax = float(line.split(',')[5])
+        ymin = float(line.split(',')[6])
+        # plot the box
+        plot_one_box([xmin, ymin, xmax, ymax], img, color=(0, 255, 0), label=cat, line_thickness=2)
+        # save the image
+        cv2.imwrite(output_path +  str(count) + "_" + str(int(float(classNo))) + "_" + file_id_path, img)
+#    print("Line {}: {}".format(count, line.strip()))
     count += 1
