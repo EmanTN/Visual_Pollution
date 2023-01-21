@@ -37,6 +37,7 @@ No. objects	  Category
 <pre>
 YOLO v3: https://github.com/ultralytics/yolov3 
 Python 3: https://www.python.org/
+Weight file: https://drive.google.com/file/d/1EbhIH_ho97H5y0SN5f8yjLrXHQ5IGkTa/view?usp=sharing
 </pre>
 ---
 ### Training YOLO v3
