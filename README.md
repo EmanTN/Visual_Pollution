@@ -59,7 +59,7 @@ python postprocess.py --labels_path path/to/lables/files --output_file result_fi
 ---
 ### Create images with predictions
 <pre>
-xx
+python image_creating.py --image_path path/to/images --result_file result_file.csv --output_path path/to/save/images/with/predictions
 </pre>
 ---
 
