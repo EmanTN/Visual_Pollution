@@ -36,5 +36,16 @@ No. objects	  Category
 ### Software
 YOLO v3: https://github.com/ultralytics/yolov3 </br>
 Python 3: https://www.python.org/
-
+---
+### Training YOLO v3
+xx
+---
+### Making Predictions
+xx
+---
+### Postprocessing data to create .csv file of results
+xx
+---
+### Create images with predictions
+xx
 
